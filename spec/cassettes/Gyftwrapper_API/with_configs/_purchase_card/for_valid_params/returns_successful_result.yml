@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apitest.gyft.com/mashery/v1/reseller/purchase/card?api_key=kwpbn8ff4cb5aueu329kq5u7&sig=a63d5051de8d828717c9ed64dbc2833040253bca6d48c1d291fc66245a5788cc
+    body:
+      encoding: US-ASCII
+      string: shop_card_id=3266&to_email=rpmilevskiy%40gmail.com
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      X-Sig-Timestamp:
+      - '1425564395'
+      Content-Length:
+      - '50'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, max-age=0, must-revalidate, private
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 05 Mar 2015 14:06:36 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      Strict-Transport-Security:
+      - max-age=15768000
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '55'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21190,"url":"https://apptest.gyft.com/redirect/"}'
+    http_version: 
+  recorded_at: Thu, 05 Mar 2015 14:06:36 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apitest.gyft.com/mashery/v1/reseller/purchase/card?api_key=kwpbn8ff4cb5aueu329kq5u7&sig=57df75e96cd2d78290071e17dde29f9be30910542dfa6441e1c9564e606a7a3b
+    body:
+      encoding: US-ASCII
+      string: shop_card_id=111
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      X-Sig-Timestamp:
+      - '1425564398'
+      Content-Length:
+      - '16'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache, max-age=0, must-revalidate, private
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 05 Mar 2015 14:06:39 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      Strict-Transport-Security:
+      - max-age=15768000
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '253'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[ServiceException] Cannot find shop card for purchase: kwpbn8ff4cb5aueu329kq5u7,
+        ResellerPurchaseCardRequest{shop_card_id=111, reseller_reference=null, to_email=null,
+        return_direct_link=false, first_name=null, last_name=null, gender=null, birthday=null}"
+    http_version: 
+  recorded_at: Thu, 05 Mar 2015 14:06:39 GMT
+recorded_with: VCR 2.9.3

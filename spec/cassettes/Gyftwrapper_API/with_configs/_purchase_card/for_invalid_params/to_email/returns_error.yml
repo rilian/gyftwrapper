@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apitest.gyft.com/mashery/v1/reseller/purchase/card?api_key=kwpbn8ff4cb5aueu329kq5u7&sig=c062b24cc15d920a33ca5087ea42fcf8fc4f1f3c16f6c19f483abd77acc451b0
+    body:
+      encoding: US-ASCII
+      string: shop_card_id=3266&to_email=123
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      X-Sig-Timestamp:
+      - '1425564400'
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache, max-age=0, must-revalidate, private
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 05 Mar 2015 14:06:41 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      Strict-Transport-Security:
+      - max-age=15768000
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[ServiceException] Email address is not valid: 123"
+    http_version: 
+  recorded_at: Thu, 05 Mar 2015 14:06:41 GMT
+recorded_with: VCR 2.9.3
